@@ -8,4 +8,5 @@ document.querySelector('#add-btn').addEventListener('click', function(e){
 
     document.querySelector('#to-do-container').appendChild(li);
     textArea.value = '';
+    
 })
