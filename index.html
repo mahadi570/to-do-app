@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500;600;700&family=Open+Sans:wght@800&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <title>To Do</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'AR One Sans', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Young Serif', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-full flex flex-col justify-center items-center pt-14 space-y-10">
+        <input id="text-area" type="text" placeholder="Type here"
+            class="input input-bordered input-success h-20 w-6/12 text-2xl" />
+        <button id="add-btn"
+            class="btn hover:bg-green-400 w-1/12 text-green-400 text-xl hover:text-white outline outline-green-500">Add</button>
+
+    </div>
+    <div class=" ml-10">
+        <h1 class="text-left text-3xl">Your ToDos are:</h1>
+        <ul id="to-do-container" class="pl-10 list-decimal text-green-500">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
